@@ -42,6 +42,8 @@ public abstract class BattleLocation extends Location {
                 Location location = null;
                 System.out.println();
                 System.out.println("Tebrikler Oyunu Kazandınız.");
+                location=new SafeHouse(getPlayer());
+                System.out.println(location.getLocationName() +" bölgesine geri döndünüz.");
                 return false;
             }
 
